@@ -54,17 +54,17 @@ namespace Stack
             Node temp = Head;
             if(temp == null)
             {
-                Console.WriteLine("Stack is Empty...");
+                Console.WriteLine("Queue is Empty...");
             }
             else
             {
                 Console.WriteLine("Stack is Follow: ");
-                while(temp != null)
-                {
-                    Console.Write(temp.data);
-                    temp = temp.next;
-                    Console.WriteLine("->");
-                }
+            }
+            while (temp != null)
+            {
+                Console.Write(temp.data);
+                temp = temp.next;
+                Console.WriteLine("->");
             }
         }
     }

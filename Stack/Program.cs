@@ -22,6 +22,9 @@ namespace Stack
             queue.Enqueue(node_2);
             queue.Enqueue(node_3);
             queue.DisplayQueue();
+
+            queue.Dequeue();
+            queue.DisplayQueue();
         }
     }
 }
