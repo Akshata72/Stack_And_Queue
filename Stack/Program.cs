@@ -9,11 +9,14 @@ namespace Stack
             Node node_2 = new Node(30);
             Node node_3 = new Node(56);
 
-            Stack stake = new Stack();
-            stake.Push(node_1);
-            stake.Push(node_2);
-            stake.Push(node_3);
-            stake.DisplayStack();
+            Stack stack = new Stack();
+            stack.Push(node_1);
+            stack.Push(node_2);
+            stack.Push(node_3);
+         
+            stack.Peak();
+            stack.Pop();
+            stack.Peak();
         }
     }
 }

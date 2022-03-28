@@ -17,7 +17,11 @@ namespace Stack
         {
             linkedlist.AddNode(node);
         }
-        public void DisplayStack()
+        public void Pop()
+        {
+            linkedlist.RemoveNode();
+        }
+        public void Peak()
         {
             linkedlist.Display();
         }

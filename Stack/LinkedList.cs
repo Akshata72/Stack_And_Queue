@@ -28,16 +28,24 @@ namespace Stack
                 Head = node;
             }
         }
+        public void RemoveNode()
+        {
+            while(Head != null)
+            {
+                Console.WriteLine("pop = {0}", Head.data);
+                Head = Head.next;
+            }
+        }
         public void Display()
         {
             Node temp = Head;
             if(temp == null)
             {
-                Console.WriteLine("Stake is Empty...");
+                Console.WriteLine("Stack is Empty...");
             }
             else
             {
-                Console.WriteLine("Stake is Follow: ");
+                Console.WriteLine("Stack is Follow: ");
                 while(temp != null)
                 {
                     Console.Write(temp.data);
